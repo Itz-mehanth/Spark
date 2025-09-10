@@ -17,13 +17,14 @@
             arjs="sourceType: webcam; debugUIEnabled: false;"
         >
         
-        <a-sphere
-            look-at="[gps-camera]"
-            radius="50"
-            color="blue"
-            scale="1 1 1"
-            gps-entity-place="latitude: 12.751279366339926; longitude: 80.19723022648573;"
-        ></a-sphere>
+    <a-cylinder
+        look-at="[gps-camera]"
+        radius="1"
+        height="500"
+        color="red"
+        gps-entity-place="latitude: 12.751279366339926; longitude: 80.19723022648573;"
+    ></a-cylinder>
+
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
