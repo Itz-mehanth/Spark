@@ -16,20 +16,14 @@
             loading-screen="enabled: false;"
             arjs="sourceType: webcam; debugUIEnabled: false;"
         >
-            <a-assets>
-                <a-asset-item
-                    id="animated-asset"
-                    src="assets/asset.glb"
-                ></a-asset-item>
-            </a-assets>
-
-                <a-entity
-                    look-at="[gps-camera]"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
-                    scale="10 10 10"
-                    gps-entity-place="latitude: 12.7517406; longitude: 80.1972834;"
-                ></a-entity>
+        
+        <a-sphere
+            look-at="[gps-camera]"
+            radius="5"
+            color="blue"
+            scale="0.44 0.44 0.44"
+            gps-entity-place="latitude: 12.751279366339926; longitude: 80.19723022648573;"
+        ></a-sphere>
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
